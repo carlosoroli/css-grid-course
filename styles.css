@@ -1,6 +1,7 @@
 :root {
     --skin: #f6c09c;
     --background: #ed4042;
+    --ear:#ed927d;
     --red: #ed2860;
     --dark-red: #680524;
     --black: #00243a;
@@ -20,10 +21,10 @@
       align-items: center;
 }
 .head{
-    width: 275px;
-    height: 475px;
+    width: 300px;
+    height: 550px;
     background-color: var(--skin);
-    border-radius: calc(275px / 2);
+    border-radius: calc(300px / 2);
     position: relative;
 }
 .eye-left{
@@ -34,6 +35,7 @@
     border-radius:40px;
     top: 25%;
     left: 25%;
+    z-index: 5;
 }
 .eye-right{
     position: absolute;
@@ -43,15 +45,16 @@
     border-radius:40px;
     top: 25%;
     right: 25%;
+    z-index: 5;
 }
 .eyebrown{
     position: absolute;
     background-color: yellowgreen;
     width: 180px;
     height: 40px;
-    top: 20%;
+    top: 22%;
     left:calc(50% - (180px/2));
-    z-index: 1;
+    z-index: 6;
     background-color: var(--skin);
 }
 .pupil-left{
@@ -62,7 +65,7 @@
     border-radius: 5px;
     top: 32%;
     left: 37%;
-    z-index: 2;
+    z-index: 7;
 }
 .pupil-right{
     position:absolute;
@@ -72,5 +75,54 @@
     border-radius: 5px;
     top: 32%;
     right: 37%;
-    z-index: 2;
+    z-index: 7;
+}
+.nose{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 40%;
+    left: calc(50% - 45px);
+    background-color: var(--skin);
+    border-radius: 45px;
+    z-index: 7;
+}
+.beard{
+    position: absolute;
+    top: calc(100% - 300px);
+    width: 300px;
+    height: 300px;
+    background-color: var(--black);
+    border-top-left-radius: calc(300px / 2.5) ;
+    border-top-right-radius: calc(300px / 2.5) ;
+    border-bottom-left-radius: calc(300px / 2);
+    border-bottom-right-radius: calc(300px / 2);
+    z-index: 1;
+}
+.ear-left{
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 30px 0 0 30px;
+    background-color: var(--ear);
+    left: calc(0% - 50px);
+    top: 35% ;
+}
+.ear-right{
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 0 30px 30px 0;
+    background-color: var(--ear);
+    left: 100%;
+    top: 35% ;
+}
+.neck{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    background-color: yellowgreen;
+    top:80%;
+    left: calc(50% - 100px);
+    background-color: var(--ear);
 }
