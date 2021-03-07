@@ -9,4 +9,8 @@
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(2,1fr);
     gap: 20px 10px;
+    grid-template-areas: 
+        " header header"
+        " main main"
+        "footer footer";
 }
