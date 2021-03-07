@@ -178,7 +178,7 @@
     border-radius: 5px;
     transform: rotate(45deg);
     background-color: var(--x);
-    left: calc(100% - 2px);
+    left: calc(100% - 4px);
     top: 39.5% ;
 }
 .x2-right{
@@ -188,6 +188,6 @@
     border-radius: 5px;
     transform: rotate(135deg);
     background-color: var(--x);
-    left: calc(100% - 2px);
+    left: calc(100% - 4px);
     top: 39.5% ;
 }
