@@ -24,6 +24,8 @@
 }
 .item:nth-child(1){
     background-color: yellowgreen;
+    align-self: center;
+    justify-self: end;
 }
 .item:not(:nth-child(1)){
     background-color: hotpink;
